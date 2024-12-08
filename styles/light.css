@@ -1,12 +1,31 @@
 /*
   Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
+  Здесь указываются стили, которые нужно переопределить принудительно,
   переключая тему
 */
 
 .page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --accent-color: #353430;
+  --accent-color-transparent: rgba(53, 52, 48, 0.4);
+  --accent-text-color: #353430;
+  --text-color: #353430;
+  --title-color: #ffc2e6;
+  --bg-image: url('../images/cover-image-light.png');
+  --bg-color: #fff1f7;
+  --accent-bg-color: #ff8dcb;
+  --rec-display: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --accent-color: #353430;
+    --accent-color-transparent: rgba(53, 52, 48, 0.4);
+    --accent-text-color: #353430;
+    --text-color: #353430;
+    --title-color: #ffc2e6;
+    --bg-image: url('../images/cover-image-light.png');
+    --bg-color: #fff1f7;
+    --accent-bg-color: #ff8dcb;
+    --rec-display: none;
+  }
 }

@@ -1,4 +1,14 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+/* Переменные для проекта и их переопределение под различные устройства */
+
+:root {
+  --accent-color: #ff0070;
+  --accent-color-transparent: rgb(255, 0, 112, 0.4);
+  --accent-text-color: #000028;
+  --text-color: #f1b2ce;
+  --title-color: #db00ff;
+  --shadow-color: #ff0070;
+  --bg-image: url('../images/cover-image-dark.png');
+  --bg-color: #000028;
+  --accent-bg-color: var(--accent-color, #ff0070);
+  --rec-display: inline;
+}

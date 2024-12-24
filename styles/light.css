@@ -5,27 +5,41 @@
 */
 
 .page.theme_light {
+  /* Фон */
+  --bg-color: #fff1f7;
+  --bg-image: url('../images/cover-image-light.png');
+
+  /* Акценты */
   --accent-color: #353430;
   --accent-color-transparent: rgba(53, 52, 48, 0.4);
+  --accent-bg-color: #ff8dcb;
   --accent-text-color: #353430;
+
+  /* Текст */
   --text-color: #353430;
   --title-color: #ffc2e6;
-  --bg-image: url('../images/cover-image-light.png');
-  --bg-color: #fff1f7;
-  --accent-bg-color: #ff8dcb;
+
+  /* Прочее */
   --rec-display: none;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
+    /* Фон */
+    --bg-color: #fff1f7;
+    --bg-image: url('../images/cover-image-light.png');
+
+    /* Акценты */
     --accent-color: #353430;
     --accent-color-transparent: rgba(53, 52, 48, 0.4);
+    --accent-bg-color: #ff8dcb;
     --accent-text-color: #353430;
+
+    /* Текст */
     --text-color: #353430;
     --title-color: #ffc2e6;
-    --bg-image: url('../images/cover-image-light.png');
-    --bg-color: #fff1f7;
-    --accent-bg-color: #ff8dcb;
+
+    /* Прочее */
     --rec-display: none;
   }
 }

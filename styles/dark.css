@@ -5,13 +5,20 @@
 */
 
 .page.theme_dark {
+  /* Фон */
+  --bg-color: #000028;
+  --bg-image: url('../images/cover-image-dark.png');
+
+  /* Акценты */
   --accent-color: #ff0070;
   --accent-color-transparent: rgb(255, 0, 112, 0.4);
+  --accent-bg-color: var(--accent-color, #ff0070);
   --accent-text-color: #000028;
+
+  /* Текст */
   --text-color: #f1b2ce;
   --title-color: #db00ff;
-  --bg-image: url('../images/cover-image-dark.png');
-  --bg-color: #000028;
-  --accent-bg-color: var(--accent-color, #ff0070);
+
+  /* Прочее */
   --rec-display: inline;
 }

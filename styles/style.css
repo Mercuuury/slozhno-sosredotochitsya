@@ -202,13 +202,13 @@
 @media (width >=768px) {
   .content {
     row-gap: 80px;
-    padding: 60px 20px 20px;
+    padding: 60px 20px;
   }
 }
 
 @media (width >=1024px) {
   .content {
-    padding: 60px 20px 20px;
+    padding: 60px 20px;
   }
 }
 
@@ -242,6 +242,11 @@
   display: grid;
 }
 
+.section-three-columns__cards {
+  display: grid;
+  row-gap: 20px;
+}
+
 @media (width >=768px) {
   .section-three-columns {
     grid-template-columns: repeat(3, 1fr);
@@ -261,7 +266,6 @@
 
 @media (width >=1024px) {
   .section-three-columns__cards {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
   }
@@ -366,7 +370,7 @@
 .footer {
   display: grid;
   place-items: center;
-  min-block-size: 100vh;
+  block-size: 100vb;
 }
 
 .footer__title {

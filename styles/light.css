@@ -13,7 +13,7 @@
   --accent-color: #353430;
   --accent-color-transparent: rgba(53, 52, 48, 0.4);
   --accent-bg-color: #ff8dcb;
-  --accent-text-color: #353430;
+  --accent-text-color: var(--accent-color, #353430);
 
   /* Текст */
   --text-color: #353430;

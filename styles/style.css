@@ -103,7 +103,7 @@
   appearance: none;
 }
 
-.header__theme-menu-button:not(.header__theme-menu-button_active):hover {
+.header__theme-menu-button:hover {
   border: 1px solid var(--accent-color-transparent, rgb(255, 0, 112, 0.4));
 }
 
@@ -126,7 +126,7 @@
   font-weight: 700;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 0.835;
-  text-shadow: 4px 4px 0px var(--accent-color);
+  text-shadow: 4px 4px 0px var(--shadow-color);
 }
 
 @media (width >=768px) {
@@ -219,7 +219,9 @@
 }
 
 @media (width >=768px) {
-  .section-two-columns {
+
+  .focus-section,
+  .advices-section {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-auto-flow: row;
@@ -229,43 +231,46 @@
 }
 
 @media (width >=1024px) {
-  .section-two-columns {
+
+  .focus-section,
+  .advices-section {
     column-gap: 10px;
   }
 
-  .section-two-columns__title {
+  .focus-section__title,
+  .advices-section__title {
     padding-inline-end: 10px;
   }
 }
 
-.section-three-columns {
+.reducers-section {
   display: grid;
 }
 
-.section-three-columns__cards {
+.reducers-section__cards {
   display: grid;
   row-gap: 20px;
 }
 
 @media (width >=768px) {
-  .section-three-columns {
+  .reducers-section {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto;
     column-gap: 20px;
   }
 
-  .section-three-columns__header {
+  .reducers-section__header {
     grid-column: 1 / 2;
   }
 
-  .section-three-columns__cards {
+  .reducers-section__cards {
     grid-column: 1 / 4;
     grid-row: 2;
   }
 }
 
 @media (width >=1024px) {
-  .section-three-columns__cards {
+  .reducers-section__cards {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
   }
@@ -293,7 +298,7 @@
 }
 
 .card__link:hover {
-  border-block-end: 1px solid var(--text-color, #f1b2ce);
+  border-block-end: 1px solid currentColor;
 }
 
 .card__link:focus {
@@ -301,7 +306,7 @@
 }
 
 .card__link:focus-visible {
-  outline: 1px solid var(--text-color, #f1b2ce);
+  outline: 1px solid currentColor;
 }
 
 /* Advices section */
@@ -313,7 +318,6 @@
 /* Pictures */
 
 .pictures-section__title {
-  margin-block-start: -2px;
   margin-block-end: 10px;
 }
 
@@ -377,7 +381,7 @@
 }
 
 .footer__title {
-  text-shadow: 2px 2px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--shadow-color);
 }
 
 @media (width >=768px) {
